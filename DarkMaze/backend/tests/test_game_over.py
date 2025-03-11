@@ -1,4 +1,5 @@
 from judge_code import game_over
+import random
 
 def test_game_over_0():
     assert game_over(0) == True
