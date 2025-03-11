@@ -17,6 +17,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # copy machines src/ to /app/src
 COPY src/ /app/src
 
+COPY tests/ /app/tests
+
 # change all contents' user to appuser
 RUN chown -R appuser:appuser /app
 
